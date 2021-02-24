@@ -11,16 +11,15 @@ export default function RepoList({ username }) {
             }).then((apiData) => setRepoList(apiData))
             .catch((error) => console.log(error));
     }, [username]);
-    //https://api.github.com/users/olavomtveit/repos?sort=created
 
     if (repoList) {
         return (
             <ul>
                 {repoList.map((repo) => {
                     return (
-                        <li>
-                    <a href="/">
-                    Some link <i>ICON</i>
+                        <li key={repo.id}>
+                    <a href={repo.html_url}>
+                    {repo.name} <i>ICON</i>
                     </a>
                 </li>
                     );

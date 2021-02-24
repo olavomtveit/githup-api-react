@@ -1,0 +1,18 @@
+
+  
+  .appNavigation {
+    background-color: #333;
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  
+    a {
+      line-height: 64px;
+      color: white;
+      width: 64px;
+      padding: 0 20px;
+      background-color: #cfed7b;
+    }
+  }
